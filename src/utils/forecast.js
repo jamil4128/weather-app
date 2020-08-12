@@ -13,7 +13,8 @@ const forecast = (address, callback) => {
             callback(undefined, {
                 temperature: body.current.temperature,
                 pressure: body.current.pressure,
-                prediction: body.current.weather_descriptions[0]
+                prediction: body.current.weather_descriptions[0],
+                humidity: body.current.humidity
 
             })
         }
