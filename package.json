@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "start": "npm run starts",
-    "starts": "node src/app.js -e js,hbs"
+    "starts": "nodemon src/app.js -e js,hbs"
   },
   "author": "Jamil ahmed",
   "license": "ISC",
