@@ -64,7 +64,7 @@ app.get("/weather", (req, res) => {
                 })
             }
             // res.send("<div><h1>I am at "+location+".</h1><p>Its " + temperature + " degree celcius and there is " + pressure + " atmospheric pressure. And " + prediction+"</p></div>")
-            const weatherPredict = "Its currently " + temperature + " degree celcius and a pressure of " + pressure + " atmosphere. And prediction is " + prediction + "."
+            const weatherPredict = "Its currently " + temperature + " degree celcius and a pressure of " + pressure/1000 + " atmosphere. And prediction is " + prediction + "."
             res.send({
                 location: location,
                 address: address,
